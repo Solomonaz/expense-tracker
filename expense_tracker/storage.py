@@ -4,7 +4,7 @@ from typing import List, Optional
 from .models import Expense
 
 def get_data_files() -> Path:
-    root = Path(file).resolve().parent.parent
+    root = Path(__file__).resolve().parent.parent
     path = root / 'storage' / 'expenses.json'
     path.parent.mkdir(parents=True, exist_ok=True)
     return path

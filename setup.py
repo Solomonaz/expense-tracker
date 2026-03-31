@@ -8,7 +8,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'expense-tracker=expense_tracker.cli:cli',
+            'expense=expense_tracker.cli:cli',
         ],
     },
 )
